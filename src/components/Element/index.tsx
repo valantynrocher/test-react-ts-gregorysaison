@@ -15,13 +15,13 @@ const Element = (props: ElementProps) => {
   const handleButtonClick = () => setOpen((open) => !open);
 
   return (
-    <>
+    <article className="content">
       <div className="content__header">
         <Question question={item.question} />
         <Button isOpen={isOpen} onButtonClick={handleButtonClick} />
       </div>
       <Answer isOpen={isOpen} answer={item.answer} />
-    </>
+    </article>
   );
 };
 

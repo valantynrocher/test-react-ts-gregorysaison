@@ -4,16 +4,12 @@ import content from "database/content.json";
 
 import "./app.scss";
 
-function App() {
-  return (
-    <>
-      {content.map((item: any) => (
-        <article key={item.name} className="content">
-          <Element item={item} />
-        </article>
-      ))}
-    </>
-  );
-}
+const App = () => (
+  <>
+    {content.map((item: any) => (
+      <Element key={item.name} item={item} />
+    ))}
+  </>
+);
 
 export default App;
