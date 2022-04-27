@@ -1,4 +1,4 @@
 export type ButtonProps = {
   isOpen: boolean;
-  onButtonClick: () => void;
+  onClick: () => void;
 };

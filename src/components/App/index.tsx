@@ -1,14 +1,12 @@
-import React from "react";
-import Element from "components/Element";
+import QuestionGroup from "components/QuestionGroup";
 import content from "database/content.json";
-
+import React from "react";
 import "./app.scss";
 
 const App = () => (
   <>
-    {content.map((item: any) => (
-      <Element key={item.name} item={item} />
-    ))}
+    <QuestionGroup title="Mode multiple" items={content} mode="multiple" />
+    <QuestionGroup title="Mode multiple" items={content} mode="single" />
   </>
 );
 

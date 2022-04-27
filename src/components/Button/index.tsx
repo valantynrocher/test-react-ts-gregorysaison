@@ -2,13 +2,13 @@ import "./button.scss";
 import { ButtonProps } from "./props";
 
 const Button = (props: ButtonProps) => {
-  const { isOpen, onButtonClick } = props;
+  const { isOpen, onClick } = props;
 
   return (
     <button
       type="button"
       className={isOpen ? "toggler toggler--open" : "toggler"}
-      onClick={onButtonClick}
+      onClick={onClick}
     >
       ▼
     </button>
