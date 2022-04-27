@@ -1,0 +1,22 @@
+@use 'src/styles/vars';
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
+.answer {
+  background-color: vars.$lightColor;
+  color: #77A6F7;
+  font-family: 'Lora', serif;
+  font-weight: 100;
+  transition: height 0.2s ease-in;
+  height: 0;
+  display: none;
+
+  &--open {
+    display: block;
+    height: auto;
+  }
+
+  &__title {
+    font-weight: bold;
+    padding: 0.8rem;
+  }
+}
